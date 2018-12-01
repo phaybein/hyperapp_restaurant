@@ -1,0 +1,86 @@
+#task-form {
+    background: #44519E;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    animation-name: animateBottom;
+    animation-duration: 600ms;
+
+    &.activate {
+        display: flex;
+    }
+
+    .modal__close {
+        color: $light;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0.5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    form {
+
+        h2 {
+            color: $light;
+            margin-bottom: 1rem;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        label {
+            color: $light;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 0.2rem;
+            text-transform: capitalize;
+        }
+
+        input,
+        textarea {
+            @include background-opacity($light, 0.1);
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 4px;
+            color: setTextColor($dark);
+            font-weight: 300;
+            padding: 0.5rem;
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        textarea {
+            height: 200px;
+        }
+
+        .btn--primary {
+            color: $light;
+            width: 100%;
+        }
+    }
+
+}
+
+/* Add Animation */
+@keyframes animateBottom {
+    from {
+        top: 50%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}

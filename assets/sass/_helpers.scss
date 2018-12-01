@@ -1,0 +1,45 @@
+/* HELPERS */
+
+.container {
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.nav .container {
+    max-width: 925px;
+}
+
+.bg-primary {
+    background: $primary;
+}
+
+.bg-secondary {
+    background: $secondary;
+}
+
+.bg-light {
+    background: $light;
+}
+
+.bg-gray {
+    background: $gray;
+}
+
+.bg-dark {
+    background: $dark;
+}
+
+.block {
+    display: block;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}

@@ -1,0 +1,14 @@
+.media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.media__left {
+    flex-grow: 1;
+}
+
+.media__right {
+    flex-basis: 13.09rem;
+    flex-grow: 9999;
+}

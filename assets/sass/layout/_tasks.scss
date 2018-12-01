@@ -1,0 +1,39 @@
+#tasks {
+    .container {
+        .tasks__media {
+            background: #fff;
+            box-shadow: $box-shadow;
+            border-radius: 4px;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+
+            .tasks__info {
+                small {
+                    color: $light-gray;
+                    font-size: 0.7rem;
+                }
+            }
+
+            .tasks__check {
+                .checkbox {
+                    // -webkit-appearance: none;
+                    height: 2rem;
+                    width: 2rem;
+                    background-color: $light;
+                    color: setHighlightColor($light);
+                    box-shadow: $box-shadow--inset;
+                    padding: 1rem;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
