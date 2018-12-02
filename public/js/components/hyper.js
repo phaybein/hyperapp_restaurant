@@ -247,14 +247,53 @@ function OurStory(_ref) {
 
   return (0, _hyperapp.h)(
     "section",
-    null,
+    { id: "OurStory", "class": "OurStory section" },
     (0, _hyperapp.h)(
       "div",
       { "class": "container" },
       (0, _hyperapp.h)(
-        "h1",
-        null,
-        "Our Story Section"
+        "div",
+        { "class": "OurStory__two-columns two-columns" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "OurStory__left two-columns__left" },
+          (0, _hyperapp.h)(
+            "h5",
+            null,
+            "Our Story"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            null,
+            "Cooking is the art of adjustment"
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "OurStory__left__description" },
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque."
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "OurStory__left__author" },
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Thomas Eggsy"
+            ),
+            " - Master Chef at Al Restaurant"
+          ),
+          (0, _hyperapp.h)(
+            "a",
+            { "class": "btn--secondary", href: "#!" },
+            " Reservation"
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "two-columns__right" },
+          (0, _hyperapp.h)("img", { "class": "OurStory__right__background-image", src: "" }),
+          (0, _hyperapp.h)("img", { "class": "OurStory__right__main-image", src: "" })
+        )
       )
     )
   );
