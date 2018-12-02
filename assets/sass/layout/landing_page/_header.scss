@@ -1,0 +1,85 @@
+#header {
+    background: linear-gradient(130deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4)), url('../img/production/header_section/steak1.jpeg')no-repeat center/cover, ;
+    color: $light;
+    height: 100vh;
+    margin: 0;
+
+    .container {
+        height: 100%;
+        text-align: right;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @include smLaptop {
+        }
+        
+        p {
+            margin: 0;
+            max-width: 100%;
+        }
+
+        .welcome {
+            margin: 4rem 0;
+            position: relative;
+            top: 2rem;
+
+            @include tablet {
+                margin: 0 0 4rem;
+            }
+
+            h6 {
+                font-weight: lighter;
+                letter-spacing: 1rem;
+                margin-bottom: 1.14rem;
+                margin-right: -1rem;
+                text-align: right;
+                text-transform: uppercase;
+            }
+            
+            h1 {
+                @include fontSize(60rem);
+                display: inline-block;
+                line-height: 1;
+                margin: 0;
+                text-transform: capitalize;
+                max-width: 16ch;
+                @include tablet {
+                    @include fontSize(73rem);
+                }
+            }
+        }
+
+        .contact-info {
+            font-weight: lighter;
+            margin-bottom: 1.96rem;
+            @include fontSize(15rem);
+            
+            @include smLaptop {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            &__book {
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                color: $light;
+                text-decoration: none;
+                
+                .contact-info__phone {
+                    margin-bottom: 1.14rem;
+                }
+            }
+
+            &__hours {
+                strong {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

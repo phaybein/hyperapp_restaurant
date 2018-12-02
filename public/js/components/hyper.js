@@ -98,7 +98,7 @@ function Header(_ref) {
 
   return (0, _hyperapp.h)(
     "header",
-    { "class": "header header__main" },
+    { id: "header", "class": "header header__main" },
     (0, _hyperapp.h)(
       "div",
       { "class": "container" },
@@ -121,17 +121,21 @@ function Header(_ref) {
         { "class": "contact-info header__contact-info" },
         (0, _hyperapp.h)(
           "p",
-          null,
+          { "class": "contact-info__book" },
           "Book a table directly"
         ),
         (0, _hyperapp.h)(
-          "h3",
-          null,
-          "(760) 222-2222"
+          "a",
+          { href: "tel:+7602222222" },
+          (0, _hyperapp.h)(
+            "h3",
+            { "class": "contact-info__phone" },
+            "(760) 222-2222"
+          )
         ),
         (0, _hyperapp.h)(
           "p",
-          null,
+          { "class": "contact-info__hours" },
           (0, _hyperapp.h)(
             "strong",
             null,
@@ -141,7 +145,7 @@ function Header(_ref) {
           (0, _hyperapp.h)(
             "strong",
             null,
-            "Weekend"
+            " Weekend"
           ),
           ": 9:00am - 10:00pm"
         )
