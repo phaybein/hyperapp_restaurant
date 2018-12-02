@@ -11,7 +11,7 @@ export default function Nav({ state, actions }) {
         <a class="nav__link--3 nav__main__link" href="#!">Party Platters</a>
         <a class="nav__link--4 nav__main__link" href="#!">Locations</a>
         <a class="nav__link--5 nav__main__link" href="#!">Rewards</a>
-        <a class="nav__link--6 nav__main__link" href="#!">Reservations</a>
+        <a class="nav__link--6 nav__main__link" href="#!">Reservations <i class="fas fa-angle-right"></i></a>
       </div>
     </nav>
   )

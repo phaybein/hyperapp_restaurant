@@ -48,6 +48,10 @@ var _Header = __webpack_require__(4);
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _OurStory = __webpack_require__(6);
+
+var _OurStory2 = _interopRequireDefault(_OurStory);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App(_ref) {
@@ -58,7 +62,8 @@ function App(_ref) {
     'div',
     { 'class': 'app' },
     (0, _hyperapp.h)(_Nav2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -213,7 +218,8 @@ function Nav(_ref) {
       (0, _hyperapp.h)(
         "a",
         { "class": "nav__link--6 nav__main__link", href: "#!" },
-        "Reservations"
+        "Reservations ",
+        (0, _hyperapp.h)("i", { "class": "fas fa-angle-right" })
       )
     )
   );
@@ -223,6 +229,41 @@ function Nav(_ref) {
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = OurStory;
+
+var _hyperapp = __webpack_require__(0);
+
+function OurStory(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    null,
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "h1",
+        null,
+        "Our Story Section"
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -264,4 +305,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[6]);
+],[7]);
