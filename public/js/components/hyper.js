@@ -280,7 +280,12 @@ function OurStory(_ref) {
               null,
               "Thomas Eggsy"
             ),
-            " - Master Chef at Al Restaurant"
+            " ",
+            (0, _hyperapp.h)(
+              "span",
+              null,
+              " - Master Chef at Al Restaurant"
+            )
           ),
           (0, _hyperapp.h)(
             "a",
@@ -292,7 +297,7 @@ function OurStory(_ref) {
           "div",
           { "class": "two-columns__right" },
           (0, _hyperapp.h)("img", { "class": "OurStory__right__background-image", src: "" }),
-          (0, _hyperapp.h)("img", { "class": "OurStory__right__main-image", src: "" })
+          (0, _hyperapp.h)("img", { "class": "OurStory__right__main-image", src: "../img/production/our_story_section/fresh.jpg", alt: "fresh vegetables in a basket" })
         )
       )
     )

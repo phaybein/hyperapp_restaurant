@@ -1,5 +1,5 @@
 #header {
-    background: linear-gradient(130deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4)), url('../img/production/header_section/steak1.jpeg')no-repeat center/cover, ;
+    background: $image-gradient, url('../img/production/header_section/steak1.jpeg')no-repeat center/cover, ;
     color: $light;
     height: 100vh;
     margin: 0;

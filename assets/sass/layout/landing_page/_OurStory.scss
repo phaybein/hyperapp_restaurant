@@ -1,3 +1,51 @@
 #OurStory {
-    background: pink;
+    padding: 13.64rem 0;
+
+    .container {
+        height: 100%;
+
+        .OurStory__two-columns {
+            .OurStory__left {
+                h5 {
+                    color: $dark-gray;
+                    @include fontSize (14rem);
+                    font-weight: 700;
+                    letter-spacing: 0.78rem;
+                    margin-bottom: 1.32rem;
+                    text-transform: uppercase;
+                }
+
+                h2 {
+                    @include fontSize (45rem);
+                    margin-bottom: 2.46rem;
+                    text-transform: capitalize;
+                    max-width: 21ch;
+                }
+
+                .OurStory__left__description {
+                    color: $dark-gray;
+                    @include fontSize (15rem);
+                    line-height: 2;
+                    margin: 0 0 2.96rem;
+                    max-width: 61ch;
+                }
+
+                .OurStory__left__author {
+                    @include fontSize (14rem);
+                    letter-spacing: 1px;
+                    margin: 0 0 6.55rem;
+                    text-transform: capitalize;
+
+                    span {
+                        color: $dark-gray;
+                        font-style: italic;
+                    }
+                }
+
+                .btn--secondary {}
+            }
+
+            .OurStory__right {}
+        }
+    }
 }

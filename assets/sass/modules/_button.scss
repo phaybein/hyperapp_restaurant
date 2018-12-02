@@ -30,19 +30,18 @@
 .btn--secondary {
     @extend %btn;
     background: $light;
-    border: 1px solid $primary;
+    border: 1px solid $dark;
     color: setTextColor($light);
 }
 
 .btn--secondary:hover {
-    color: $secondary;
     box-shadow: $box-shadow--3;
 }
 
 .btn--third {
     @extend %btn;
     box-shadow: none;
-    color: $primary;
+    color: $dark;
     padding: 0;
     text-decoration: underline;
 }

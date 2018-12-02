@@ -14,7 +14,7 @@ export default function OurStory({ state, actions }) {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.
             </p>
 
-            <p class="OurStory__left__author"><strong>Thomas Eggsy</strong> - Master Chef at Al Restaurant</p>
+            <p class="OurStory__left__author"><strong>Thomas Eggsy</strong> <span> - Master Chef at Al Restaurant</span></p>
 
             <a class="btn--secondary" href="#!"> Reservation</a>
           </div>
@@ -22,7 +22,7 @@ export default function OurStory({ state, actions }) {
           <div class="two-columns__right">
             <img class="OurStory__right__background-image" src="" />
 
-            <img class="OurStory__right__main-image" src="" />
+            <img class="OurStory__right__main-image" src="../img/production/our_story_section/fresh.jpg" alt="fresh vegetables in a basket" />
           </div>
         </div>
       </div>
