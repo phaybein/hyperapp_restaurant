@@ -5,6 +5,47 @@
     padding: 0.96rem 1.28rem;
 }
 
+h2 {
+    @include fontSize (45rem);
+    margin-bottom: 2.46rem;
+    text-transform: capitalize;
+    max-width: 21ch;
+}
+
+h5 {
+    color: $dark-gray;
+    @include fontSize (14rem);
+    font-weight: 700;
+    letter-spacing: 0.78rem;
+    margin-bottom: 1.32rem;
+    text-transform: uppercase;
+}
+
 img {
     border-radius: $border-radius;
+}
+
+.author {
+    @include fontSize (14rem);
+    letter-spacing: 1px;
+    margin: 0 0 6.55rem;
+    text-transform: capitalize;
+
+    span {
+        color: $dark-gray;
+        font-style: italic;
+    }
+}
+
+.btn--third {
+    @include fontSize (14rem);
+    letter-spacing: 3px;
+}
+
+.description {
+    color: $dark-gray;
+    @include fontSize (15rem);
+    line-height: 2;
+    margin: 0 0 2.96rem;
+    max-width: 61ch;
 }

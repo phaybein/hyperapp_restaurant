@@ -52,6 +52,10 @@ var _OurStory = __webpack_require__(6);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
+var _SpecialMenu = __webpack_require__(7);
+
+var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App(_ref) {
@@ -63,7 +67,8 @@ function App(_ref) {
     { 'class': 'app' },
     (0, _hyperapp.h)(_Nav2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -269,12 +274,12 @@ function OurStory(_ref) {
           ),
           (0, _hyperapp.h)(
             "p",
-            { "class": "OurStory__left__description" },
+            { "class": "OurStory__left__description description" },
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque."
           ),
           (0, _hyperapp.h)(
             "p",
-            { "class": "OurStory__left__author" },
+            { "class": "OurStory__left__author author" },
             (0, _hyperapp.h)(
               "strong",
               null,
@@ -308,6 +313,82 @@ function OurStory(_ref) {
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = SpecialMenu;
+
+var _hyperapp = __webpack_require__(0);
+
+function SpecialMenu(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "SpecialMenu", "class": "SpecialMenu section" },
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "h5",
+        null,
+        "Special Menu"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        "Delicious flavors of Autumn"
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "SpecialMenu__col-3 card-column-layout" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "SpecialMenu__call-out call-out__1 call-out" },
+          (0, _hyperapp.h)(
+            "h3",
+            null,
+            "column 1"
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "SpecialMenu__call-out call-out__2 call-out" },
+          (0, _hyperapp.h)(
+            "h3",
+            null,
+            "column 1"
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "SpecialMenu__call-out call-out__3 call-out" },
+          (0, _hyperapp.h)(
+            "h3",
+            null,
+            "column 1"
+          )
+        )
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { "class": "btn--third", href: "#!" },
+        "View full menu"
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -349,4 +430,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[7]);
+],[8]);

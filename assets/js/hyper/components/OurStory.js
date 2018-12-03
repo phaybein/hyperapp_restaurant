@@ -10,11 +10,11 @@ export default function OurStory({ state, actions }) {
 
             <h2>Cooking is the art of adjustment</h2>
 
-            <p class="OurStory__left__description">
+            <p class="OurStory__left__description description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.
             </p>
 
-            <p class="OurStory__left__author"><strong>Thomas Eggsy</strong> <span> - Master Chef at Al Restaurant</span></p>
+            <p class="OurStory__left__author author"><strong>Thomas Eggsy</strong> <span> - Master Chef at Al Restaurant</span></p>
 
             <a class="btn--secondary" href="#!"> Reservation</a>
           </div>
