@@ -19,8 +19,8 @@ export default function OurStory({ state, actions }) {
             <a class="btn--secondary" href="#!"> Reservation</a>
           </div>
 
-          <div class="two-columns__right">
-            <img class="OurStory__right__background-image" src="" />
+          <div class="OurStory__right two-columns__right">
+            <img class="OurStory__right__background-image" src="../img/production/our_story_section/pattern-gray-dots.jpg" />
 
             <img class="OurStory__right__main-image" src="../img/production/our_story_section/fresh.jpg" alt="fresh vegetables in a basket" />
           </div>

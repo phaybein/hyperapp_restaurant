@@ -1,8 +1,15 @@
 #OurStory {
-    padding: 13.64rem 0;
+    height: 100vh;
+
+    @include tablet {
+        // padding: 13.64rem 0;
+    }
 
     .container {
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .OurStory__two-columns {
             .OurStory__left {
@@ -45,7 +52,24 @@
                 .btn--secondary {}
             }
 
-            .OurStory__right {}
+            .OurStory__right {
+                display: none;
+                position: relative;
+
+                @include smLaptop {
+                    display: block;
+                }
+
+                &__background-image {
+                    opacity: 0.4;
+                    z-index: -1;
+                    position: absolute;
+                    bottom: -3.82rem;
+                    left: -3.82rem;
+                }
+
+                &__main-image {}
+            }
         }
     }
 }

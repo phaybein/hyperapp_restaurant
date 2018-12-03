@@ -295,8 +295,8 @@ function OurStory(_ref) {
         ),
         (0, _hyperapp.h)(
           "div",
-          { "class": "two-columns__right" },
-          (0, _hyperapp.h)("img", { "class": "OurStory__right__background-image", src: "" }),
+          { "class": "OurStory__right two-columns__right" },
+          (0, _hyperapp.h)("img", { "class": "OurStory__right__background-image", src: "../img/production/our_story_section/pattern-gray-dots.jpg" }),
           (0, _hyperapp.h)("img", { "class": "OurStory__right__main-image", src: "../img/production/our_story_section/fresh.jpg", alt: "fresh vegetables in a basket" })
         )
       )
