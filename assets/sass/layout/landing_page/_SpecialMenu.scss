@@ -1,3 +1,20 @@
-#SpecialMenuu {
-    background: pink;
+#SpecialMenu {
+    height: 100vh;
+    padding: 7.05rem 0;
+
+    .container {
+        h5 {}
+
+        h2 {}
+
+        .SpecialMenu__col-3 {
+            .SpecialMenu__call-out {
+                height: 20.91rem;
+                padding: 1.23rem 1.23rem 2.28rem;
+                width: 17.05rem;
+            }
+        }
+
+        .btn--third {}
+    }
 }
