@@ -1,9 +1,4 @@
-%btn {
-    background: #fff;
-    @include fontSize (16rem);
-    font-family: $header;
-    padding: 0.96rem 1.28rem;
-}
+
 
 h2 {
     @include fontSize (45rem);
@@ -25,16 +20,26 @@ img {
     border-radius: $border-radius;
 }
 
+%btn {
+    @include fontSize (16rem);
+    font-family: $header;
+    padding: 0.96rem 1.28rem;
+}
+
 .author {
     @include fontSize (14rem);
     letter-spacing: 1px;
     margin: 0 0 6.55rem;
     text-transform: capitalize;
-
+    
     span {
         color: $dark-gray;
         font-style: italic;
     }
+}
+
+.btn--secondary {
+    background: #fff;
 }
 
 .btn--third {

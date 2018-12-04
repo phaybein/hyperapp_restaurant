@@ -352,27 +352,96 @@ function SpecialMenu(_ref) {
           "div",
           { "class": "SpecialMenu__call-out call-out__1 call-out" },
           (0, _hyperapp.h)(
-            "h3",
-            null,
-            "column 1"
+            "div",
+            { "class": "SpecialMenu__media media" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__left media__left" },
+              (0, _hyperapp.h)("img", { src: "//via.placeholder.com/319x227" })
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__right media__right" },
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "SpecialMenu__media__price" },
+                "$25"
+              ),
+              (0, _hyperapp.h)(
+                "h4",
+                null,
+                "Super BBQ grill no smoke"
+              ),
+              (0, _hyperapp.h)(
+                "p",
+                null,
+                "Fried eggs, bacon, toast, fresh tomato, salad, cup of coffee or tea"
+              )
+            )
           )
         ),
         (0, _hyperapp.h)(
           "div",
           { "class": "SpecialMenu__call-out call-out__2 call-out" },
           (0, _hyperapp.h)(
-            "h3",
-            null,
-            "column 1"
+            "div",
+            { "class": "SpecialMenu__media media" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__left media__left" },
+              (0, _hyperapp.h)("img", { src: "//via.placeholder.com/319x227" })
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__right media__right" },
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "SpecialMenu__media__price" },
+                "$42"
+              ),
+              (0, _hyperapp.h)(
+                "h4",
+                null,
+                "Queen of autumn"
+              ),
+              (0, _hyperapp.h)(
+                "p",
+                null,
+                "Warm chicken wings, portobello mushrooms, fresh mozzarella, cup of coffee or tea"
+              )
+            )
           )
         ),
         (0, _hyperapp.h)(
           "div",
           { "class": "SpecialMenu__call-out call-out__3 call-out" },
           (0, _hyperapp.h)(
-            "h3",
-            null,
-            "column 1"
+            "div",
+            { "class": "SpecialMenu__media media" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__left media__left" },
+              (0, _hyperapp.h)("img", { src: "//via.placeholder.com/319x227" })
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__right media__right" },
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "SpecialMenu__media__price" },
+                "$30"
+              ),
+              (0, _hyperapp.h)(
+                "h4",
+                null,
+                "Royal Fried chicken"
+              ),
+              (0, _hyperapp.h)(
+                "p",
+                null,
+                "Grilled chicken, roasted red potatoes with rosemary, mushroom sauce, wine"
+              )
+            )
           )
         )
       ),
@@ -384,7 +453,7 @@ function SpecialMenu(_ref) {
     )
   );
 }
-// <Header state={state} actions={actions}/>
+// <Header state={state} actions={actions} />
 // <Button state={state} actions={actions}/>
 
 /***/ }),

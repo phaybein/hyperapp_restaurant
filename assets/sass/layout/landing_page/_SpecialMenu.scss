@@ -1,20 +1,61 @@
 #SpecialMenu {
-    height: 100vh;
-    padding: 7.05rem 0;
+    background: #f4f4f4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+    @include smLaptop {
+        padding: 7.05rem 0;
+    }
 
     .container {
         h5 {}
 
-        h2 {}
+        h2 {
+            margin: 0 auto 2.46rem;
+        }
 
         .SpecialMenu__col-3 {
+            margin-bottom: 4rem;
+
             .SpecialMenu__call-out {
-                height: 20.91rem;
+                background: #fff;
+                // height: 20.91rem;
                 padding: 1.23rem 1.23rem 2.28rem;
-                width: 17.05rem;
+                // width: 17.05rem;
+
+                .SpecialMenu__media {
+                    text-align: center;
+                    
+                    &__left {}
+                    
+                    &__right {
+                        position: relative;
+                        
+                        .SpecialMenu__media__price {
+                            background: #fff;
+                            border: 0.46rem solid blue;
+                            border-radius: 50%;
+                            height: 5.14rem;
+                            margin: 0 auto;
+                            width: 5.14rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -50%;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
             }
         }
 
-        .btn--third {}
+        .btn--third {
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+        }
     }
 }

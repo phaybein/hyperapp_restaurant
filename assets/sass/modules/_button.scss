@@ -40,6 +40,7 @@
 
 .btn--third {
     @extend %btn;
+    background: none;
     box-shadow: none;
     color: $dark;
     padding: 0;
