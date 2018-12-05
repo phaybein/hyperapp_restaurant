@@ -12,13 +12,16 @@ export default function SpecialMenu({ state, actions }) {
           <div class="SpecialMenu__call-out call-out__1 call-out">
             <div class="SpecialMenu__media media">
               <div class="SpecialMenu__media__left media__left">
-                <img src="//via.placeholder.com/319x227" />
+                <img src="../img/production/special_menu_section/eggs.jpg" />
+              </div>
+
+              <div class="SpecialMenu__media__price__outter">
+                <div class="SpecialMenu__media__price__inner">
+                  $25
+                  </div>
               </div>
 
               <div class="SpecialMenu__media__right media__right">
-                <div class="SpecialMenu__media__price">
-                  $25
-                </div>
 
                 <h4>Super BBQ grill no smoke</h4>
 
@@ -30,14 +33,16 @@ export default function SpecialMenu({ state, actions }) {
           <div class="SpecialMenu__call-out call-out__2 call-out">
             <div class="SpecialMenu__media media">
               <div class="SpecialMenu__media__left media__left">
-                <img src="//via.placeholder.com/319x227" />
+                <img src="../img/production/special_menu_section/chicken-wings.jpg" />
+              </div>
+
+              <div class="SpecialMenu__media__price__outter">
+                <div class="SpecialMenu__media__price__inner">
+                  $42
+                  </div>
               </div>
 
               <div class="SpecialMenu__media__right media__right">
-                <div class="SpecialMenu__media__price">
-                  $42
-                </div>
-
                 <h4>Queen of autumn</h4>
 
                 <p>Warm chicken wings, portobello mushrooms, fresh mozzarella, cup of coffee or tea</p>
@@ -48,13 +53,16 @@ export default function SpecialMenu({ state, actions }) {
           <div class="SpecialMenu__call-out call-out__3 call-out">
             <div class="SpecialMenu__media media">
               <div class="SpecialMenu__media__left media__left">
-                <img src="//via.placeholder.com/319x227" />
+                <img src="../img/production/special_menu_section/fried-chicken.jpg" />
+              </div>
+
+              <div class="SpecialMenu__media__price__outter">
+                <div class="SpecialMenu__media__price__inner">
+                  $30
+                  </div>
               </div>
 
               <div class="SpecialMenu__media__right media__right">
-                <div class="SpecialMenu__media__price">
-                  $30
-                </div>
 
                 <h4>Royal Fried chicken</h4>
 

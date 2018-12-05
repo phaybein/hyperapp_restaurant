@@ -1,5 +1,6 @@
 #SpecialMenu {
     background: #f4f4f4;
+    padding: 5rem 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -13,6 +14,7 @@
 
         h2 {
             margin: 0 auto 2.46rem;
+            max-width: 100%;
         }
 
         .SpecialMenu__col-3 {
@@ -20,34 +22,79 @@
 
             .SpecialMenu__call-out {
                 background: #fff;
-                // height: 20.91rem;
                 padding: 1.23rem 1.23rem 2.28rem;
-                // width: 17.05rem;
 
                 .SpecialMenu__media {
+                    justify-content: center;
+                    position: relative;
                     text-align: center;
                     
-                    &__left {}
-                    
-                    &__right {
-                        position: relative;
-                        
-                        .SpecialMenu__media__price {
+                    &__left {
+                        margin-bottom: 3.55rem;
+                    }
+
+                    .SpecialMenu__media__price__outter {
+                        border: 12px solid rgba(255,255,255,0.4);
+                        border-radius: 50%;
+                        box-sizing: content-box;
+                        height: 5.14rem;
+                        text-align: center;
+                        width: 5.14rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 42%;
+
+                        @include tablet {
+                            top: 38%;
+                        }
+
+                        @include smLaptop {
+                            top: 47%;
+                        }
+
+                        @include laptop {
+                            top: 38%;
+                        }
+
+                        .SpecialMenu__media__price__inner {
+                            @include fontSize(42rem);
                             background: #fff;
-                            border: 0.46rem solid blue;
                             border-radius: 50%;
+                            font-family: $header;
                             height: 5.14rem;
-                            margin: 0 auto;
                             width: 5.14rem;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            position: absolute;
-                            top: -50%;
-                            left: 0;
-                            right: 0;
                         }
                     }
+                    
+                    &__right {
+                        position: relative;
+                        
+                        h4 {
+                            @include fontSize (18rem);
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            margin-bottom: 0.91rem;
+                        }
+                        
+                        p {
+                            color: $gray;
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+
+            .call-out__3 {
+                margin-top: 2rem;
+
+                @include laptop {
+                    margin-top: 0;
                 }
             }
         }

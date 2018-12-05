@@ -357,16 +357,20 @@ function SpecialMenu(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "SpecialMenu__media__left media__left" },
-              (0, _hyperapp.h)("img", { src: "//via.placeholder.com/319x227" })
+              (0, _hyperapp.h)("img", { src: "../img/production/special_menu_section/eggs.jpg" })
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__price__outter" },
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "SpecialMenu__media__price__inner" },
+                "$25"
+              )
             ),
             (0, _hyperapp.h)(
               "div",
               { "class": "SpecialMenu__media__right media__right" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "SpecialMenu__media__price" },
-                "$25"
-              ),
               (0, _hyperapp.h)(
                 "h4",
                 null,
@@ -389,16 +393,20 @@ function SpecialMenu(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "SpecialMenu__media__left media__left" },
-              (0, _hyperapp.h)("img", { src: "//via.placeholder.com/319x227" })
+              (0, _hyperapp.h)("img", { src: "../img/production/special_menu_section/chicken-wings.jpg" })
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__price__outter" },
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "SpecialMenu__media__price__inner" },
+                "$42"
+              )
             ),
             (0, _hyperapp.h)(
               "div",
               { "class": "SpecialMenu__media__right media__right" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "SpecialMenu__media__price" },
-                "$42"
-              ),
               (0, _hyperapp.h)(
                 "h4",
                 null,
@@ -421,16 +429,20 @@ function SpecialMenu(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "SpecialMenu__media__left media__left" },
-              (0, _hyperapp.h)("img", { src: "//via.placeholder.com/319x227" })
+              (0, _hyperapp.h)("img", { src: "../img/production/special_menu_section/fried-chicken.jpg" })
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__price__outter" },
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "SpecialMenu__media__price__inner" },
+                "$30"
+              )
             ),
             (0, _hyperapp.h)(
               "div",
               { "class": "SpecialMenu__media__right media__right" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "SpecialMenu__media__price" },
-                "$30"
-              ),
               (0, _hyperapp.h)(
                 "h4",
                 null,

@@ -7,6 +7,10 @@ h2 {
     max-width: 21ch;
 }
 
+h4 {
+    font-family: $body;
+}
+
 h5 {
     color: $dark-gray;
     @include fontSize (14rem);
