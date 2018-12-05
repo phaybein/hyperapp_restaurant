@@ -9,6 +9,11 @@
         padding: 7.05rem 0;
     }
 
+    @include laptop {
+        height: 100vh;
+        padding: 0;
+    }
+
     .container {
         h5 {}
 
