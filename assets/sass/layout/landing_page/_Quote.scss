@@ -1,0 +1,28 @@
+#Quote {
+    background: $image-gradient, url('../img/production/quote_section/cooking.jpg')no-repeat center/cover;
+    color: $light;
+    padding: 8rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        min-height: 50vh;
+    }
+
+    i {
+        @include fontSize(47rem);
+        margin-bottom: 3.82rem;
+    }
+
+    h2 {
+        max-width: 29ch;
+        margin: 0 auto 3.23rem;
+    }
+
+    p {
+        @include fontSize(16rem);
+    }
+
+}
