@@ -5,6 +5,7 @@ import OurStory from './OurStory';
 import SpecialMenu from './SpecialMenu';
 import Quote from './Quote';
 import Review from './Review';
+import ContactUs from './ContactUs'
 
 export default function App({ state, actions }) {
   return (
@@ -15,6 +16,7 @@ export default function App({ state, actions }) {
       <SpecialMenu state={state} actions={actions} />
       <Quote state={state} actions={actions} />
       <Review state={state} actions={actions} />
+      <ContactUs state={state} actions={actions} />
     </div>
   )
 }
