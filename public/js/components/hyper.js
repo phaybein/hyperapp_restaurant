@@ -389,7 +389,7 @@ function Review(_ref) {
           "div",
           { "class": "Review__left two-columns__left" },
           (0, _hyperapp.h)("img", { "class": "Review__left__background-image", src: "../img/production/our_story_section/pattern-gray-dots.jpg" }),
-          (0, _hyperapp.h)("img", { "class": "Review__left__main-image", src: "../img/production/review_section/chef.png", alt: "fresh vegetables in a basket" })
+          (0, _hyperapp.h)("img", { "class": "Review__left__main-image", src: "../img/production/review_section/female-chef.png", alt: "fresh vegetables in a basket" })
         ),
         (0, _hyperapp.h)(
           "div",
@@ -425,9 +425,10 @@ function Review(_ref) {
             )
           ),
           (0, _hyperapp.h)(
-            "a",
-            { "class": "btn--secondary", href: "#!" },
-            " Reservation"
+            "div",
+            { "class": "page-controls" },
+            (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left" }),
+            (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right" })
           )
         )
       )

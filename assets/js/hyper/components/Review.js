@@ -8,7 +8,7 @@ export default function Review({ state, actions }) {
           <div class="Review__left two-columns__left">
             <img class="Review__left__background-image" src="../img/production/our_story_section/pattern-gray-dots.jpg" />
 
-            <img class="Review__left__main-image" src="../img/production/review_section/chef.png" alt="fresh vegetables in a basket" />
+            <img class="Review__left__main-image" src="../img/production/review_section/female-chef.png" alt="fresh vegetables in a basket" />
 
           </div>
 
@@ -23,7 +23,10 @@ export default function Review({ state, actions }) {
 
             <p class="Review__right__author author"><strong>Joe Bastianich</strong> <span> - Winner Master Chef 2016</span></p>
 
-            <a class="btn--secondary" href="#!"> Reservation</a>
+            <div class="page-controls">
+              <i class="fas fa-arrow-left"></i>
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,9 @@
 #Review {
-    padding-top: 6.23rem;
+    padding: 6.23rem 0;
+
+    @include smLaptop {
+        padding: 6.23rem 0 0;
+    }
 
     .container {
         height: 100%;
@@ -33,6 +37,7 @@
             }
 
             .Review__right {
+                padding-top: 1.69rem;
                 text-align: right;
 
                 .Review__right__description {
@@ -41,6 +46,13 @@
 
                 .author {
                     max-width: 100%;
+                }
+
+                .page-controls {
+                    i:first-child() {
+                        color: $gray;
+                        margin-right: 1.37rem;
+                    }
                 }
             }
         }
