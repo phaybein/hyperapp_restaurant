@@ -4,6 +4,7 @@ import Header from './Header';
 import OurStory from './OurStory';
 import SpecialMenu from './SpecialMenu';
 import Quote from './Quote';
+import Review from './Review';
 
 export default function App({ state, actions }) {
   return (
@@ -13,8 +14,7 @@ export default function App({ state, actions }) {
       <OurStory state={state} actions={actions} />
       <SpecialMenu state={state} actions={actions} />
       <Quote state={state} actions={actions} />
+      <Review state={state} actions={actions} />
     </div>
   )
 }
-// <Header state={state} actions={actions}/>
-// <Button state={state} actions={actions}/>

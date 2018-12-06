@@ -52,13 +52,17 @@ var _OurStory = __webpack_require__(6);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(8);
+var _SpecialMenu = __webpack_require__(9);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
 
 var _Quote = __webpack_require__(7);
 
 var _Quote2 = _interopRequireDefault(_Quote);
+
+var _Review = __webpack_require__(8);
+
+var _Review2 = _interopRequireDefault(_Review);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -73,11 +77,10 @@ function App(_ref) {
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_Quote2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_Quote2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Review2.default, { state: state, actions: actions })
   );
 }
-// <Header state={state} actions={actions}/>
-// <Button state={state} actions={actions}/>
 
 /***/ }),
 /* 3 */
@@ -365,6 +368,85 @@ function OurStory(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = Review;
+
+var _hyperapp = __webpack_require__(0);
+
+function Review(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "Review", "class": "Review section" },
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "Review__two-columns two-columns" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "Review__left two-columns__left" },
+          (0, _hyperapp.h)("img", { "class": "Review__left__background-image", src: "../img/production/our_story_section/pattern-gray-dots.jpg" }),
+          (0, _hyperapp.h)("img", { "class": "Review__left__main-image", src: "../img/production/review_section/chef.png", alt: "fresh vegetables in a basket" })
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "Review__right two-columns__right" },
+          (0, _hyperapp.h)(
+            "h5",
+            null,
+            "Review"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            null,
+            "The foods masters say about us"
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "Review__right__description description" },
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque."
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "Review__right__author author" },
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Joe Bastianich"
+            ),
+            " ",
+            (0, _hyperapp.h)(
+              "span",
+              null,
+              " - Winner Master Chef 2016"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "a",
+            { "class": "btn--secondary", href: "#!" },
+            " Reservation"
+          )
+        )
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = SpecialMenu;
 
 var _hyperapp = __webpack_require__(0);
@@ -513,7 +595,7 @@ function SpecialMenu(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -555,4 +637,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[9]);
+],[10]);

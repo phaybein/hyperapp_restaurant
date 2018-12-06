@@ -1,0 +1,48 @@
+#Review {
+    padding-top: 6.23rem;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Review__two-columns {
+
+            .Review__left {
+                display: none;
+                position: relative;
+
+                @include smLaptop {
+                    display: block;
+                }
+
+                &__background-image {
+                    opacity: 0.4;
+                    z-index: -1;
+                    position: absolute;
+                    left: -3.82rem;
+                }
+
+                &__main-image {
+                    max-height: 714px;
+                    object-fit: contain;
+                    transform: scaleX(-1);
+                    filter: FlipH;
+                }
+            }
+
+            .Review__right {
+                text-align: right;
+
+                .Review__right__description {
+                    display: inline-block;
+                }
+
+                .author {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
