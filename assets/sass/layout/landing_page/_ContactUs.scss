@@ -5,6 +5,76 @@
     h5 {}
 
     h2 {
+        margin-bottom: 3.73rem;
         max-width: 100%;
+    }
+
+    .ContactUs__two-columns {
+        background: #fff;
+        border-radius: $border-radius;
+        padding: 3.73rem 3.28rem;
+        text-align: left;
+
+        .ContactUs__column__left {
+            h3 {
+                @include fontSize(26rem);
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+
+                span {
+                    color: $title_color;
+                }
+            }
+
+            .ContactUs__address {
+                @include fontSize(17rem);
+                color: $title_color;
+                font-weight: 600;
+                line-height: 1.5;
+                margin-bottom: 1.69rem;
+                max-width: 100%;
+            }
+
+            .ContactUs__email {
+                @include fontSize(15rem);
+                max-width: 100%;
+
+                span {
+                    color: $title_color;
+                }
+            }
+        }
+
+        .ContactUs__column__right {
+            @include fontSize(15rem);
+            justify-self: center;
+
+            .ContactUs__call {
+                color: $title_color;
+                margin-bottom: 1rem;
+            }
+
+            .ContactUs__phone {
+                @include fontSize(42rem);
+                font-family: $header;
+                font-weight: 400;
+                margin-bottom: 2.32rem;
+            }
+
+            .ContactUs__service {
+                margin-bottom: 1rem;
+            }
+
+            .ContactUs__time{
+                color: $title_color;
+                display: inline-block;
+                margin-bottom: 2.14rem;
+                max-width: 36ch;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }

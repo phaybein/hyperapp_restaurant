@@ -121,7 +121,7 @@ function ContactUs(_ref) {
 
   return (0, _hyperapp.h)(
     "section",
-    { id: "ContactUs", "class": "ContactUs section" },
+    { id: "ContactUs", "class": "ContactUs section background_pattern" },
     (0, _hyperapp.h)(
       "div",
       { "class": "container" },
@@ -134,6 +134,88 @@ function ContactUs(_ref) {
         "h2",
         null,
         "We are always here to help you"
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "ContactUs__two-columns two-columns" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "ContactUs__column__left column__left" },
+          (0, _hyperapp.h)(
+            "h3",
+            null,
+            "Oceanside, ",
+            (0, _hyperapp.h)(
+              "span",
+              null,
+              "California"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "ContactUs__address" },
+            "123 Main St, ",
+            (0, _hyperapp.h)("br", null),
+            "Oceanside, CA 90210"
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "ContactUs__email" },
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Email"
+            ),
+            " ",
+            (0, _hyperapp.h)(
+              "span",
+              null,
+              ": info@restaurant.com"
+            )
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "ContactUs__column__right column__right" },
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "ContactUs__call" },
+            "Call directly:"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            { "class": "ContactUs__phone" },
+            "(760) 268 9209"
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "ContactUs__service" },
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Lunch Service:"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "ContactUs__time" },
+            "Friday, Saturday and Sunday: Bookings from 12pm - 1:30pm"
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "ContactUs__service" },
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Dinner Service:"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "ContactUs__time" },
+            "Daily: Bookings from 6pm - 9:30pm"
+          )
+        )
       )
     )
   );
