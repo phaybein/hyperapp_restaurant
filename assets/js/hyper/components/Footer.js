@@ -14,15 +14,15 @@ export default function Header({ state, actions }) {
         </div>
 
         <div class="Footer__social">
-          <a href="//facebook.com">
+          <a href="//facebook.com" target="_blank">
             <i class="fab fa-facebook-square"></i>
           </a>
 
-          <a href="//instagram.com">
+          <a href="//instagram.com" target="_blank">
             <i class="fab fa-instagram"></i>
           </a>
 
-          <a href="//twitter.com">
+          <a href="//twitter.com" target="_blank">
             <i class="fab fa-twitter"></i>
           </a>
         </div>

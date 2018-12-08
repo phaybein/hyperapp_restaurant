@@ -293,17 +293,17 @@ function Header(_ref) {
         { "class": "Footer__social" },
         (0, _hyperapp.h)(
           "a",
-          { href: "//facebook.com" },
+          { href: "//facebook.com", target: "_blank" },
           (0, _hyperapp.h)("i", { "class": "fab fa-facebook-square" })
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "//instagram.com" },
+          { href: "//instagram.com", target: "_blank" },
           (0, _hyperapp.h)("i", { "class": "fab fa-instagram" })
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "//twitter.com" },
+          { href: "//twitter.com", target: "_blank" },
           (0, _hyperapp.h)("i", { "class": "fab fa-twitter" })
         )
       ),
