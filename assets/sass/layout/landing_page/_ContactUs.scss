@@ -44,9 +44,13 @@
             .ContactUs__email {
                 @include fontSize(15rem);
                 max-width: 100%;
+                
+                a {
+                    text-decoration: none;
 
-                span {
-                    color: $title_color;
+                    span {
+                        color: $title_color;
+                    }
                 }
             }
         }
@@ -95,6 +99,7 @@
             .ContactUs__time{
                 color: $title_color;
                 display: inline-block;
+                line-height: 1.25;
                 margin-bottom: 2.14rem;
                 max-width: 36ch;
 

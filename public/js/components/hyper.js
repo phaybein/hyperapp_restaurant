@@ -166,11 +166,14 @@ function ContactUs(_ref) {
               null,
               "Email"
             ),
-            " ",
             (0, _hyperapp.h)(
-              "span",
-              null,
-              ": info@restaurant.com"
+              "a",
+              { href: "mailto:" },
+              (0, _hyperapp.h)(
+                "span",
+                null,
+                ": info@restaurant.com"
+              )
             )
           )
         ),
@@ -203,7 +206,9 @@ function ContactUs(_ref) {
           (0, _hyperapp.h)(
             "p",
             { "class": "ContactUs__time" },
-            "Friday, Saturday and Sunday: Bookings from 12pm - 1:30pm"
+            "Friday, Saturday and Sunday: ",
+            (0, _hyperapp.h)("br", null),
+            "From 12pm - 1:30pm"
           ),
           (0, _hyperapp.h)(
             "p",
@@ -217,7 +222,9 @@ function ContactUs(_ref) {
           (0, _hyperapp.h)(
             "p",
             { "class": "ContactUs__time" },
-            "Daily: Bookings from 6pm - 9:30pm"
+            "Daily: ",
+            (0, _hyperapp.h)("br", null),
+            "From 6pm - 9:30pm"
           )
         )
       )

@@ -14,7 +14,11 @@ export default function ContactUs({ state, actions }) {
 
             <p class="ContactUs__address">123 Main St, <br />Oceanside, CA 90210</p>
 
-            <p class="ContactUs__email"><strong>Email</strong> <span>: info@restaurant.com</span></p>
+            <p class="ContactUs__email"><strong>Email</strong>
+              <a href="mailto:">
+                <span>: info@restaurant.com</span>
+              </a>
+            </p>
           </div>
 
           <div class="ContactUs__column__right column__right">
@@ -26,11 +30,13 @@ export default function ContactUs({ state, actions }) {
 
             <p class="ContactUs__service"><strong>Lunch Service:</strong></p>
 
-            <p class="ContactUs__time">Friday, Saturday and Sunday: Bookings from 12pm - 1:30pm</p>
+            <p class="ContactUs__time">Friday, Saturday and Sunday: <br />
+              From 12pm - 1:30pm</p>
 
             <p class="ContactUs__service"><strong>Dinner Service:</strong></p>
 
-            <p class="ContactUs__time">Daily: Bookings from 6pm - 9:30pm</p>
+            <p class="ContactUs__time">Daily: <br />
+              From 6pm - 9:30pm</p>
           </div>
         </div>
       </div>
