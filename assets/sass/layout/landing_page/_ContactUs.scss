@@ -16,10 +16,16 @@
         text-align: left;
 
         .ContactUs__column__left {
+            margin-bottom: 2rem;
+
             h3 {
-                @include fontSize(26rem);
+                @include fontSize(15rem);
                 letter-spacing: 1px;
                 margin-bottom: 1rem;
+
+                @include smLaptop {
+                @include fontSize(26rem);
+                }
 
                 span {
                     color: $title_color;
@@ -47,22 +53,43 @@
 
         .ContactUs__column__right {
             @include fontSize(15rem);
-            justify-self: center;
+
+            @include smLaptop {
+                justify-self: center;
+            }
 
             .ContactUs__call {
                 color: $title_color;
-                margin-bottom: 1rem;
+                margin: 0 0 1rem;
+
+                @include tablet {
+                    margin-bottom: 1rem;
+                }
             }
 
-            .ContactUs__phone {
-                @include fontSize(42rem);
-                font-family: $header;
-                font-weight: 400;
-                margin-bottom: 2.32rem;
+            a {
+                color: $tag-color;
+                text-decoration: none;
+
+                .ContactUs__phone {
+                    @include fontSize(24rem);
+                    font-family: $header;
+                    font-weight: 400;
+                    margin-bottom: 2.32rem;
+    
+                    @include smLaptop {
+                        @include fontSize(42rem);
+                    }
+                }
             }
+
 
             .ContactUs__service {
-                margin-bottom: 1rem;
+                margin: 0 0 1rem;
+
+                @include tablet {
+                    margin-bottom: 1rem;
+                }
             }
 
             .ContactUs__time{

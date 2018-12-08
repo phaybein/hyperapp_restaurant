@@ -20,7 +20,9 @@ export default function ContactUs({ state, actions }) {
           <div class="ContactUs__column__right column__right">
             <p class="ContactUs__call">Call directly:</p>
 
-            <h2 class="ContactUs__phone">(760) 268 9209</h2>
+            <a href="tel:1-760-9209">
+              <h2 class="ContactUs__phone">(760) 268 9209</h2>
+            </a>
 
             <p class="ContactUs__service"><strong>Lunch Service:</strong></p>
 

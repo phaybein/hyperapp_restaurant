@@ -183,9 +183,13 @@ function ContactUs(_ref) {
             "Call directly:"
           ),
           (0, _hyperapp.h)(
-            "h2",
-            { "class": "ContactUs__phone" },
-            "(760) 268 9209"
+            "a",
+            { href: "tel:1-760-9209" },
+            (0, _hyperapp.h)(
+              "h2",
+              { "class": "ContactUs__phone" },
+              "(760) 268 9209"
+            )
           ),
           (0, _hyperapp.h)(
             "p",
