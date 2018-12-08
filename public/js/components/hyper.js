@@ -263,19 +263,59 @@ function Header(_ref) {
     (0, _hyperapp.h)(
       "div",
       { "class": "container" },
+      (0, _hyperapp.h)("img", { src: "../../img/logo-prod.png" }),
       (0, _hyperapp.h)(
         "div",
-        { "class": "welcome Footer__welecome" },
+        { "class": "Footer__nav" },
         (0, _hyperapp.h)(
-          "h6",
+          "a",
           null,
-          "welcome"
+          "Reservations"
         ),
         (0, _hyperapp.h)(
-          "h1",
+          "a",
           null,
-          "Prime Steak Restaurant"
+          "Functions"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          null,
+          "Contact"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          null,
+          "Reviews & Media"
         )
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "Footer__social" },
+        (0, _hyperapp.h)(
+          "a",
+          { href: "//facebook.com" },
+          (0, _hyperapp.h)("i", { "class": "fab fa-facebook-square" })
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "//instagram.com" },
+          (0, _hyperapp.h)("i", { "class": "fab fa-instagram" })
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "//twitter.com" },
+          (0, _hyperapp.h)("i", { "class": "fab fa-twitter" })
+        )
+      ),
+      (0, _hyperapp.h)(
+        "p",
+        { "class": "Footer__company" },
+        "\xA9 Ai Restaurant"
+      ),
+      (0, _hyperapp.h)(
+        "p",
+        { "class": "Footer__design" },
+        "Design by Mauro M. All Rights reserved"
       )
     )
   );

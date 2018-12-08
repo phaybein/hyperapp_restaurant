@@ -1,3 +1,77 @@
 #Footer {
-    
+    background: $footer-color;
+    color: $light;
+    padding: 5.19rem 0 3.09rem;
+    text-align: center;
+
+    img {
+        margin-bottom: 1.91rem;
+        width: 6.82rem;
+    }
+
+    .Footer__nav {
+        margin-bottom: 7.73rem;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            cursor: pointer;
+            color: $light;
+            padding: 1.73rem 0;
+            transition: $transition;
+
+            @include tablet {
+                border-right: 1px solid $light;
+                padding: 0 1.73rem;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            &:hover {
+                color: $title-color;
+            }
+        }
+    }
+
+    .Footer__social {
+        margin-bottom: 2rem;
+
+        a {
+            color: $light;
+            padding: 1.73rem 0;
+            transition: $transition;
+
+            &:hover {
+                color: $title-color;
+            }
+
+            i {
+                padding: 0.5rem 1.19rem;
+            }
+        }
+    }
+
+    .Footer__company {
+        @include fontSize(14rem);
+        color: $title-color;
+    }
+
+    .Footer__design {
+        @include fontSize(14rem);
+
+        color: $title-color;
+    }
+
+    p {
+        line-height: 1.5;
+        text-transform: capitalize;
+    }
 }
