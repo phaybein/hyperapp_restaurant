@@ -1,6 +1,7 @@
 import { h, app } from 'hyperapp'
 
 export default function OurStory({ state, actions }) {
+  let company = state.company.site.our_story;
   return (
     <section id="OurStory" class="OurStory section">
       <div class="container">
@@ -8,13 +9,11 @@ export default function OurStory({ state, actions }) {
           <div class="OurStory__left two-columns__left">
             <h5>Our Story</h5>
 
-            <h2>Cooking is the art of adjustment</h2>
+            <h2>{company.title}</h2>
 
-            <p class="OurStory__left__description description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.
-            </p>
+            <p class="OurStory__left__description description">{company.caption}</p>
 
-            <p class="OurStory__left__author author"><strong>Thomas Eggsy</strong> <span> - Master Chef at Al Restaurant</span></p>
+            <p class="OurStory__left__author author"><strong>{company.name}</strong> <span> - {company.position}</span></p>
 
             <a class="btn--secondary" href="#!"> Reservation</a>
           </div>

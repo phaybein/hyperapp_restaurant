@@ -470,6 +470,7 @@ function Nav(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+  var company = state.company;
   return (0, _hyperapp.h)(
     "nav",
     { id: "nav", "class": "nav nav__main" },
@@ -479,37 +480,38 @@ function Nav(_ref) {
       (0, _hyperapp.h)(
         "a",
         { "class": "logo nav__link--1 nav__main__link", href: "#!" },
-        "Brand",
+        company.name.first,
         (0, _hyperapp.h)(
           "span",
           null,
-          "Logo"
+          company.name.second
         )
       ),
       (0, _hyperapp.h)(
         "a",
         { "class": "nav__link--2 nav__main__link", href: "#!" },
-        "Menu"
+        company.site.nav.nav_option_1
       ),
       (0, _hyperapp.h)(
         "a",
         { "class": "nav__link--3 nav__main__link", href: "#!" },
-        "Party Platters"
+        company.site.nav.nav_option_2
       ),
       (0, _hyperapp.h)(
         "a",
         { "class": "nav__link--4 nav__main__link", href: "#!" },
-        "Locations"
+        company.site.nav.nav_option_3
       ),
       (0, _hyperapp.h)(
         "a",
         { "class": "nav__link--5 nav__main__link", href: "#!" },
-        "Rewards"
+        company.site.nav.nav_option_4
       ),
       (0, _hyperapp.h)(
         "a",
         { "class": "nav__link--6 nav__main__link", href: "#!" },
-        "Reservations ",
+        company.site.nav.nav_option_5,
+        " ",
         (0, _hyperapp.h)("i", { "class": "fas fa-angle-right" })
       )
     )
@@ -536,6 +538,7 @@ function OurStory(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+  var company = state.company.site.our_story;
   return (0, _hyperapp.h)(
     "section",
     { id: "OurStory", "class": "OurStory section" },
@@ -556,12 +559,12 @@ function OurStory(_ref) {
           (0, _hyperapp.h)(
             "h2",
             null,
-            "Cooking is the art of adjustment"
+            company.title
           ),
           (0, _hyperapp.h)(
             "p",
             { "class": "OurStory__left__description description" },
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque."
+            company.caption
           ),
           (0, _hyperapp.h)(
             "p",
@@ -569,13 +572,14 @@ function OurStory(_ref) {
             (0, _hyperapp.h)(
               "strong",
               null,
-              "Thomas Eggsy"
+              company.name
             ),
             " ",
             (0, _hyperapp.h)(
               "span",
               null,
-              " - Master Chef at Al Restaurant"
+              " - ",
+              company.position
             )
           ),
           (0, _hyperapp.h)(
