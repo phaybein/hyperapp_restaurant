@@ -102,8 +102,50 @@ function App(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var company = {
+  name: {
+    first: 'Brand',
+    second: 'Logo'
+  },
+  address: {
+    street: "123 Main St",
+    city: "Oceanside",
+    state: "CA",
+    zip: "90210"
+  },
+  phone_number: "(760) 412-2222",
+  hours: {
+    weekday: {
+      open: '9:00',
+      close: '9:00'
+    },
+    weekend: {
+      open: '9:00',
+      close: '10:00'
+    }
+  },
+  site: {
+    nav: {
+      nav_option_1: 'Menu',
+      nav_option_2: 'Party Platters',
+      nav_option_3: 'Locations',
+      nav_option_4: 'Rewards',
+      nav_option_5: 'reservations'
+    },
+    header: {
+      title: 'Prime Time Restaurant'
+    },
+    our_story: {
+      title: 'Cooking Is The Art Of Adjustment',
+      caption: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+      name: 'Thomas Eggsy',
+      position: 'Master Chef At Al Restaurant'
+    }
+  }
+};
+
 var globalState = exports.globalState = {
-  count: 0
+  company: company
 };
 
 /***/ }),
@@ -341,6 +383,7 @@ function Header(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+  var company = state.company;
   return (0, _hyperapp.h)(
     "header",
     { id: "header", "class": "header header__main" },
@@ -358,7 +401,7 @@ function Header(_ref) {
         (0, _hyperapp.h)(
           "h1",
           null,
-          "Prime Steak Restaurant"
+          company.site.header.title
         )
       ),
       (0, _hyperapp.h)(
@@ -371,11 +414,11 @@ function Header(_ref) {
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "tel:+7602222222" },
+          { href: "tel:+7604122222" },
           (0, _hyperapp.h)(
             "h3",
             { "class": "contact-info__phone" },
-            "(760) 222-2222"
+            company.phone_number
           )
         ),
         (0, _hyperapp.h)(
@@ -386,13 +429,21 @@ function Header(_ref) {
             null,
             " Mon - Fri"
           ),
-          ": 9:00am - 9:00pm ",
+          ": ",
+          company.hours.weekday.open,
+          "am - ",
+          company.hours.weekday.close,
+          "pm ",
           (0, _hyperapp.h)(
             "strong",
             null,
             " Weekend"
           ),
-          ": 9:00am - 10:00pm"
+          ": ",
+          company.hours.weekend.open,
+          "am - ",
+          company.hours.weekend.close,
+          "0pm"
         )
       )
     )
@@ -842,7 +893,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _hyperapp.app)({
-  state: { globalState: _globalState.globalState },
+  state: _globalState.globalState,
   view: function view(state, actions) {
     return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
   },

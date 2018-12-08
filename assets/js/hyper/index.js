@@ -1,10 +1,10 @@
 import { h, app } from 'hyperapp'
-import {actions} from './actions/actions.js'
-import {globalState} from './state/globalState.js'
+import { actions } from './actions/actions.js'
+import { globalState } from './state/globalState.js'
 import App from './components/App.js'
 
 app({
-  state: {globalState},
+  state: globalState,
   view: (state, actions) => <App state={state} actions={actions} />,
   root: document.getElementById('app'),
   actions,
