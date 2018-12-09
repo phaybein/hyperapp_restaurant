@@ -9,35 +9,27 @@ webpackJsonp([0],[
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var actions = exports.actions = {
-  review_status_decrease: review_status_decrease,
-  review_status_increase: review_status_increase,
-  intro: intro,
-  showMenu: showMenu
-};
 
-function review_status_decrease(state, actions) {
+var review_status_decrease = function review_status_decrease(state, actions) {
   return {
     review_status: {
       current_review: state.review_status.current_review - 1
     }
   };
-}
+};
 
-function review_status_increase(state, actions) {
+var review_status_increase = function review_status_increase(state, actions) {
   return {
     review_status: {
       current_review: state.review_status.current_review + 1
     }
   };
-}
+};
 
-function showMenu() {}
-
-function intro(state, actions) {
-  console.log('Just ran my first action');
-  return { count: state.count + 1 };
-}
+var actions = exports.actions = {
+  review_status_decrease: review_status_decrease,
+  review_status_increase: review_status_increase
+};
 
 /***/ }),
 /* 2 */
@@ -731,7 +723,7 @@ function Review(_ref) {
   var data = state.reviews_data[state.review_status.current_review];
 
   var review = state.review_status.current_review;
-  console.log(data, review);
+
   var current_review = function current_review() {
     return (0, _hyperapp.h)(
       "div",
@@ -762,7 +754,7 @@ function Review(_ref) {
 
   var decrease_button = function decrease_button() {
     if (review === 0) {
-      console.log('nothing');
+      return;
     } else {
       actions.review_status_decrease();
     }
@@ -770,7 +762,7 @@ function Review(_ref) {
 
   var increase_button = function increase_button() {
     if (review === state.reviews_data.length - 1) {
-      console.log('nothing');
+      return;
     } else {
       actions.review_status_increase();
     }
@@ -953,9 +945,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       console.log("Data:", data);
       console.groupEnd();
     },
-    load: function load(state, actions) {
-      actions.intro();
-    }
+    load: function load(state, actions) {}
   }
 });
 

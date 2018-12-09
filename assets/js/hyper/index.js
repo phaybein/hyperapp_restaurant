@@ -16,7 +16,6 @@ app({
       console.groupEnd()
     },
     load(state, actions) {
-      actions.intro()
     }
   }
 })

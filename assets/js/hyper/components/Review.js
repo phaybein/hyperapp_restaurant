@@ -5,7 +5,7 @@ export default function Review({ state, actions }) {
   const data = state.reviews_data[state.review_status.current_review];
 
   let review = state.review_status.current_review;
-  console.log(data, review)
+
   let current_review = () => {
     return (
       <div class="Review__right__data">
@@ -21,7 +21,7 @@ export default function Review({ state, actions }) {
 
   const decrease_button = () => {
     if (review === 0) {
-      console.log('nothing');
+      return;
     } else {
       actions.review_status_decrease()
     }
@@ -29,7 +29,7 @@ export default function Review({ state, actions }) {
 
   const increase_button = () => {
     if (review === (state.reviews_data.length) - 1) {
-      console.log('nothing');
+      return;
     } else {
       actions.review_status_increase()
     }
