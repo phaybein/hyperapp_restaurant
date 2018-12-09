@@ -10,13 +10,26 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var actions = exports.actions = {
-  up: up,
+  review_status_decrease: review_status_decrease,
+  review_status_increase: review_status_increase,
   intro: intro,
   showMenu: showMenu
 };
 
-function up(state, actions) {
-  return { count: state.count + 1 };
+function review_status_decrease(state, actions) {
+  return {
+    review_status: {
+      current_review: state.review_status.current_review - 1
+    }
+  };
+}
+
+function review_status_increase(state, actions) {
+  return {
+    review_status: {
+      current_review: state.review_status.current_review + 1
+    }
+  };
 }
 
 function showMenu() {}
@@ -718,21 +731,11 @@ function Review(_ref) {
   var data = state.reviews_data[state.review_status.current_review];
 
   var review = state.review_status.current_review;
-
+  console.log(data, review);
   var current_review = function current_review() {
     return (0, _hyperapp.h)(
       "div",
-      null,
-      (0, _hyperapp.h)(
-        "h5",
-        null,
-        "Reviews"
-      ),
-      (0, _hyperapp.h)(
-        "h2",
-        null,
-        "The foods masters say about us"
-      ),
+      { "class": "Review__right__data" },
       (0, _hyperapp.h)(
         "p",
         { "class": "Review__right__description description" },
@@ -753,14 +756,24 @@ function Review(_ref) {
           " - ",
           data.position
         )
-      ),
-      (0, _hyperapp.h)(
-        "div",
-        { "class": "page-controls" },
-        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left " + (review > 0 ? 'ready' : '') }),
-        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right " + (review === state.reviews_data.length - 1 ? '' : 'ready') })
       )
     );
+  };
+
+  var decrease_button = function decrease_button() {
+    if (review === 0) {
+      console.log('nothing');
+    } else {
+      actions.review_status_decrease();
+    }
+  };
+
+  var increase_button = function increase_button() {
+    if (review === state.reviews_data.length - 1) {
+      console.log('nothing');
+    } else {
+      actions.review_status_increase();
+    }
   };
 
   return (0, _hyperapp.h)(
@@ -781,7 +794,27 @@ function Review(_ref) {
         (0, _hyperapp.h)(
           "div",
           { "class": "Review__right two-columns__right" },
-          current_review()
+          (0, _hyperapp.h)(
+            "h5",
+            null,
+            "Reviews"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            null,
+            "The foods masters say about us"
+          ),
+          current_review(),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "page-controls" },
+            (0, _hyperapp.h)("i", {
+              onclick: decrease_button,
+              "class": "fas fa-arrow-left " + (review > 0 ? 'ready' : '') }),
+            (0, _hyperapp.h)("i", {
+              onclick: increase_button,
+              "class": "fas fa-arrow-right " + (review === state.reviews_data.length - 1 ? '' : 'ready') })
+          )
         )
       )
     )

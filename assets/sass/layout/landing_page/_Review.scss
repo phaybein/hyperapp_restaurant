@@ -40,6 +40,10 @@
                 padding-top: 1.69rem;
                 text-align: right;
 
+                .Review__right__data{
+                    min-height: 9rem;
+                }
+
                 .Review__right__description {
                     display: inline-block;
                 }
@@ -50,6 +54,7 @@
 
                 .page-controls {
                     color: $gray;
+                    cursor: pointer;
                     i:first-child() {
                         margin-right: 1.37rem;
                     }
