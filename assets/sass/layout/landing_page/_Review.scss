@@ -41,15 +41,20 @@
                 text-align: right;
 
                 .Review__right__data{
-                    min-height: 9rem;
-                }
+                    min-height: 13rem;
 
-                .Review__right__description {
-                    display: inline-block;
-                }
+                    @include tablet {
+                        min-height: 12rem;
+                    }
 
-                .author {
-                    max-width: 100%;
+                    .Review__right__description {
+                        display: inline-block;
+                    }
+
+                    .author {
+                        margin: 0;
+                        max-width: 100%;
+                    }
                 }
 
                 .page-controls {
