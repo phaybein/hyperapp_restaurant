@@ -2,8 +2,8 @@ import { h, app } from 'hyperapp'
 
 export default function SpecialMenu({ state, actions }) {
 
-  let loop_menu = function () {
-    return state.special_menu.map(function (item) {
+  let loop_menu = () => {
+    return state.special_menu.map(item => {
 
       return (
         <div class="SpecialMenu__call-out call-out__1 call-out">

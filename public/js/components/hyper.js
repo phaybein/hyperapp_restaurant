@@ -164,9 +164,44 @@ var special_menu = [{
   price: 30
 }];
 
+var random_quote_data = [{
+  author: 'Al roker',
+  quote: 'I love cooking for my family and for myself'
+}, {
+  author: 'Johnny b',
+  quote: 'Flavors are carefully mixed and combined. Bring me back!'
+}];
+
+var reviews_data = [{
+  review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+  author: 'Joe Bastianich',
+  position: 'Winner master chef 2016'
+}, {
+  review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime!',
+  author: 'Michael Smith',
+  position: 'The food network'
+}, {
+  review: 'Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+  author: 'Jacob Ramirez',
+  position: 'Chopped'
+}, {
+  review: 'Lorem ipsum, dolor sit obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+  author: 'Sandra Moreno',
+  position: 'Blazzin'
+}, {
+  review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+  author: 'Erica Sanchez',
+  position: 'Telefood'
+}];
+
 var globalState = exports.globalState = {
   company: company,
-  special_menu: special_menu
+  special_menu: special_menu,
+  reviews_data: reviews_data,
+  random_quote_data: random_quote_data,
+  review_status: {
+    current_review: 3
+  }
 };
 
 /***/ }),
@@ -679,6 +714,53 @@ function Review(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+
+  var data = state.reviews_data[state.review_status.current_review];
+
+  var current_review = function current_review() {
+    return (0, _hyperapp.h)(
+      "div",
+      null,
+      (0, _hyperapp.h)(
+        "h5",
+        null,
+        "Reviews"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        "The foods masters say about us"
+      ),
+      (0, _hyperapp.h)(
+        "p",
+        { "class": "Review__right__description description" },
+        data.review
+      ),
+      (0, _hyperapp.h)(
+        "p",
+        { "class": "Review__right__author author" },
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          data.author
+        ),
+        " ",
+        (0, _hyperapp.h)(
+          "span",
+          null,
+          " - ",
+          data.position
+        )
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "page-controls" },
+        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left" }),
+        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right" })
+      )
+    );
+  };
+
   return (0, _hyperapp.h)(
     "section",
     { id: "Review", "class": "Review section" },
@@ -697,42 +779,7 @@ function Review(_ref) {
         (0, _hyperapp.h)(
           "div",
           { "class": "Review__right two-columns__right" },
-          (0, _hyperapp.h)(
-            "h5",
-            null,
-            "Review"
-          ),
-          (0, _hyperapp.h)(
-            "h2",
-            null,
-            "The foods masters say about us"
-          ),
-          (0, _hyperapp.h)(
-            "p",
-            { "class": "Review__right__description description" },
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque."
-          ),
-          (0, _hyperapp.h)(
-            "p",
-            { "class": "Review__right__author author" },
-            (0, _hyperapp.h)(
-              "strong",
-              null,
-              "Joe Bastianich"
-            ),
-            " ",
-            (0, _hyperapp.h)(
-              "span",
-              null,
-              " - Winner Master Chef 2016"
-            )
-          ),
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "page-controls" },
-            (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left" }),
-            (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right" })
-          )
+          current_review()
         )
       )
     )

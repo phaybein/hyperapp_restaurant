@@ -64,10 +64,54 @@ const special_menu = [
   },
 ];
 
+const random_quote_data = [
+  {
+    author: 'Al roker',
+    quote: 'I love cooking for my family and for myself'
+  },
+  {
+    author: 'Johnny b',
+    quote: 'Flavors are carefully mixed and combined. Bring me back!'
+  }
+];
+
+const reviews_data = [
+  {
+    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+    author: 'Joe Bastianich',
+    position: 'Winner master chef 2016'
+  },
+  {
+    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime!',
+    author: 'Michael Smith',
+    position: 'The food network'
+  },
+  {
+    review: 'Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+    author: 'Jacob Ramirez',
+    position: 'Chopped'
+  },
+  {
+    review: 'Lorem ipsum, dolor sit obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+    author: 'Sandra Moreno',
+    position: 'Blazzin'
+  },
+  {
+    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
+    author: 'Erica Sanchez',
+    position: 'Telefood'
+  },
+];
+
 
 
 
 export const globalState = {
   company,
-  special_menu
+  special_menu,
+  reviews_data,
+  random_quote_data,
+  review_status: {
+    current_review: 3
+  }
 }
