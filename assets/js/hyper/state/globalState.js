@@ -100,7 +100,7 @@ const reviews_data = [
     review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
     author: 'Erica Sanchez',
     position: 'Telefood'
-  },
+  }
 ];
 
 
@@ -112,6 +112,6 @@ export const globalState = {
   reviews_data,
   random_quote_data,
   review_status: {
-    current_review: 3
+    current_review: 0
   }
 }

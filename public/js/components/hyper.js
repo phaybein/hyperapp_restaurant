@@ -200,7 +200,7 @@ var globalState = exports.globalState = {
   reviews_data: reviews_data,
   random_quote_data: random_quote_data,
   review_status: {
-    current_review: 3
+    current_review: 0
   }
 };
 
@@ -717,6 +717,8 @@ function Review(_ref) {
 
   var data = state.reviews_data[state.review_status.current_review];
 
+  var review = state.review_status.current_review;
+
   var current_review = function current_review() {
     return (0, _hyperapp.h)(
       "div",
@@ -755,8 +757,8 @@ function Review(_ref) {
       (0, _hyperapp.h)(
         "div",
         { "class": "page-controls" },
-        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left" }),
-        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right" })
+        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left " + (review > 0 ? 'ready' : '') }),
+        (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right " + (review === state.reviews_data.length - 1 ? '' : 'ready') })
       )
     );
   };

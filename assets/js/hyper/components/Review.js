@@ -4,6 +4,8 @@ export default function Review({ state, actions }) {
 
   const data = state.reviews_data[state.review_status.current_review];
 
+  let review = state.review_status.current_review;
+
   let current_review = () => {
     return (
       <div>
@@ -18,10 +20,10 @@ export default function Review({ state, actions }) {
         <p class="Review__right__author author"><strong>{data.author}</strong> <span> - {data.position}</span></p>
 
         <div class="page-controls">
-          <i class="fas fa-arrow-left"></i>
-          <i class="fas fa-arrow-right"></i>
-        </div>
-      </div>
+          <i class={`fas fa-arrow-left ${(review > 0) ? 'ready' : ''}`}></i>
+          <i class={`fas fa-arrow-right ${(review === (state.reviews_data.length) - 1) ? '' : 'ready'}`}></i>
+        </div >
+      </div >
     )
   }
 
