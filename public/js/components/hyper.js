@@ -140,12 +140,33 @@ var company = {
       caption: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
       name: 'Thomas Eggsy',
       position: 'Master Chef At Al Restaurant'
+    },
+    special_menu: {
+      title: 'Delicious Flavors Of Autumn'
     }
   }
 };
 
+var special_menu = [{
+  img: '/img/production/special_menu_section/eggs.jpg',
+  title: 'Super BBQ Grill No Smoke',
+  description: 'Fried eggs, bacon, toast, fresh tomato, salad, cup of coffee or tea',
+  price: 25
+}, {
+  img: '/img/production/special_menu_section/chicken-wings.jpg',
+  title: 'Queen Of Autumn',
+  description: 'Warm chicken wings, portobello mushrooms, fresh mozzarella, cup of coffee or tea',
+  price: 42
+}, {
+  img: '/img/production/special_menu_section/fried-chicken.jpg',
+  title: 'Royal Fried Chicken',
+  description: 'Grilled chicken, roasted red potatoes with rosemary, mushroom sauce, wine',
+  price: 30
+}];
+
 var globalState = exports.globalState = {
-  company: company
+  company: company,
+  special_menu: special_menu
 };
 
 /***/ }),
@@ -738,6 +759,50 @@ function SpecialMenu(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+
+  var loop_menu = function loop_menu() {
+    return state.special_menu.map(function (item) {
+
+      return (0, _hyperapp.h)(
+        "div",
+        { "class": "SpecialMenu__call-out call-out__1 call-out" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "SpecialMenu__media media" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "SpecialMenu__media__left media__left" },
+            (0, _hyperapp.h)("img", { src: item.img })
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "SpecialMenu__media__price__outter" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "SpecialMenu__media__price__inner" },
+              "$",
+              item.price
+            )
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "SpecialMenu__media__right media__right" },
+            (0, _hyperapp.h)(
+              "h4",
+              null,
+              item.title
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              item.description
+            )
+          )
+        )
+      );
+    });
+  };
+
   return (0, _hyperapp.h)(
     "section",
     { id: "SpecialMenu", "class": "SpecialMenu section" },
@@ -752,119 +817,12 @@ function SpecialMenu(_ref) {
       (0, _hyperapp.h)(
         "h2",
         null,
-        "Delicious flavors of Autumn"
+        state.company.site.special_menu.title
       ),
       (0, _hyperapp.h)(
         "div",
         { "class": "SpecialMenu__col-3 card-column-layout" },
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "SpecialMenu__call-out call-out__1 call-out" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "SpecialMenu__media media" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__left media__left" },
-              (0, _hyperapp.h)("img", { src: "../img/production/special_menu_section/eggs.jpg" })
-            ),
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__price__outter" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "SpecialMenu__media__price__inner" },
-                "$25"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__right media__right" },
-              (0, _hyperapp.h)(
-                "h4",
-                null,
-                "Super BBQ grill no smoke"
-              ),
-              (0, _hyperapp.h)(
-                "p",
-                null,
-                "Fried eggs, bacon, toast, fresh tomato, salad, cup of coffee or tea"
-              )
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "SpecialMenu__call-out call-out__2 call-out" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "SpecialMenu__media media" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__left media__left" },
-              (0, _hyperapp.h)("img", { src: "../img/production/special_menu_section/chicken-wings.jpg" })
-            ),
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__price__outter" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "SpecialMenu__media__price__inner" },
-                "$42"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__right media__right" },
-              (0, _hyperapp.h)(
-                "h4",
-                null,
-                "Queen of autumn"
-              ),
-              (0, _hyperapp.h)(
-                "p",
-                null,
-                "Warm chicken wings, portobello mushrooms, fresh mozzarella, cup of coffee or tea"
-              )
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "SpecialMenu__call-out call-out__3 call-out" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "SpecialMenu__media media" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__left media__left" },
-              (0, _hyperapp.h)("img", { src: "../img/production/special_menu_section/fried-chicken.jpg" })
-            ),
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__price__outter" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "SpecialMenu__media__price__inner" },
-                "$30"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "SpecialMenu__media__right media__right" },
-              (0, _hyperapp.h)(
-                "h4",
-                null,
-                "Royal Fried chicken"
-              ),
-              (0, _hyperapp.h)(
-                "p",
-                null,
-                "Grilled chicken, roasted red potatoes with rosemary, mushroom sauce, wine"
-              )
-            )
-          )
-        )
+        loop_menu()
       ),
       (0, _hyperapp.h)(
         "a",

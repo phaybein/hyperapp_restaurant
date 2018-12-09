@@ -36,13 +36,38 @@ const company = {
       caption: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero maiores esse commodi error aliquid distinctio doloribus? Fuga veniam adipisci quidem corporis obcaecati maxime! Quaerat quam nisi accusantium facere cumque.',
       name: 'Thomas Eggsy',
       position: 'Master Chef At Al Restaurant'
+    },
+    special_menu: {
+      title: 'Delicious Flavors Of Autumn'
     }
   }
 };
+
+const special_menu = [
+  {
+    img: '/img/production/special_menu_section/eggs.jpg',
+    title: 'Super BBQ Grill No Smoke',
+    description: 'Fried eggs, bacon, toast, fresh tomato, salad, cup of coffee or tea',
+    price: 25
+  },
+  {
+    img: '/img/production/special_menu_section/chicken-wings.jpg',
+    title: 'Queen Of Autumn',
+    description: 'Warm chicken wings, portobello mushrooms, fresh mozzarella, cup of coffee or tea',
+    price: 42
+  },
+  {
+    img: '/img/production/special_menu_section/fried-chicken.jpg',
+    title: 'Royal Fried Chicken',
+    description: 'Grilled chicken, roasted red potatoes with rosemary, mushroom sauce, wine',
+    price: 30
+  },
+];
 
 
 
 
 export const globalState = {
-  company
+  company,
+  special_menu
 }

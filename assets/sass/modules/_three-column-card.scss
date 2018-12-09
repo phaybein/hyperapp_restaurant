@@ -20,7 +20,7 @@
 
         @include tablet {
             flex-basis: 48%;
-            margin-bottom: 0;
+            margin-bottom: 1rem;
         }
 
         @include laptop {
