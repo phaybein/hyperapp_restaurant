@@ -24,7 +24,7 @@ export default function ContactUs({ state, actions }) {
           <div class="ContactUs__column__right column__right">
             <p class="ContactUs__call">Call directly:</p>
 
-            <a href="tel:17602689209">
+            <a href="tel:+17602689209">
               <h2 class="ContactUs__phone">(760) 268 9209</h2>
             </a>
 

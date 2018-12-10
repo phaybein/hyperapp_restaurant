@@ -15,7 +15,7 @@ export default function Header({ state, actions }) {
           <p class="contact-info__book">
             Book a table directly
           </p>
-          <a href="tel:+7604122222">
+          <a href="tel:+17604122222">
             <h3 class="contact-info__phone">
               {company.phone_number}
             </h3>
