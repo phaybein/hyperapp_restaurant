@@ -1,6 +1,7 @@
 #nav {
     position: absolute;
     width: 100%;
+    z-index: 1;
     .container {
         padding: 1rem 0;
         display: flex;
@@ -15,9 +16,15 @@
            padding: 0.5rem;
            text-decoration: none;
            text-transform: capitalize;
+           transition: $transition;
            width: 100%;
+
            @include smLaptop {
                width: fit-content;
+           }
+
+           &:hover {
+               color: darken($light, 18);
            }
        }
 
