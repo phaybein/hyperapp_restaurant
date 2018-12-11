@@ -227,6 +227,7 @@ function ContactUs(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+  var company = state.company;
   return (0, _hyperapp.h)(
     "section",
     { id: "ContactUs", "class": "ContactUs section background_pattern" },
@@ -252,19 +253,25 @@ function ContactUs(_ref) {
           (0, _hyperapp.h)(
             "h3",
             null,
-            "Oceanside, ",
+            company.address.city,
+            ", ",
             (0, _hyperapp.h)(
               "span",
               null,
-              "California"
+              company.address.state
             )
           ),
           (0, _hyperapp.h)(
             "p",
             { "class": "ContactUs__address" },
-            "123 Main St, ",
+            company.address.street,
+            ", ",
             (0, _hyperapp.h)("br", null),
-            "Oceanside, CA 90210"
+            company.address.city,
+            ", ",
+            company.address.state,
+            " ",
+            company.address.zip
           ),
           (0, _hyperapp.h)(
             "p",
@@ -295,11 +302,11 @@ function ContactUs(_ref) {
           ),
           (0, _hyperapp.h)(
             "a",
-            { href: "tel:1-760-9209" },
+            { href: "tel:+17602689209" },
             (0, _hyperapp.h)(
               "h2",
               { "class": "ContactUs__phone" },
-              "(760) 268 9209"
+              company.phone_number
             )
           ),
           (0, _hyperapp.h)(
@@ -475,7 +482,7 @@ function Header(_ref) {
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "tel:+7604122222" },
+          { href: "tel:+17604122222" },
           (0, _hyperapp.h)(
             "h3",
             { "class": "contact-info__phone" },
